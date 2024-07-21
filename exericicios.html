@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header id="title">
+      <h1>Verificador de idade</h1>
+    </header>
+    <section id="content">
+      <div>
+        <p>
+          Ano de Nascimento:
+          <input
+            type="number"
+            name="txtano"
+            id="txtano"
+            min="0"
+            placeholder="Digite o ano.."
+            class="input-numero"
+          />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="radsex" id="mas" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          <input
+            class="btn"
+            type="button"
+            value="Verificar"
+            onclick="verificar()"
+          />
+        </p>
+      </div>
+      <div>
+        <p id="fantasma"></p>
+        <p id="res">Preencha os dados acima para ver o resultado</p>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Jeann Moret</p>
+    </footer>
+  </body>
+</html>
